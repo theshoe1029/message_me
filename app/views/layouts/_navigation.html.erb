@@ -13,11 +13,11 @@
           <% else %>
             <%= link_to "Log in", login_path, class: "item" %>
           <% end %>
-          <a class="item">Sign up</a>
+          <%= link_to "Sign up", signup_path, class: "item" %>
         </div>
       </div>
       <% if !logged_in? %>
-        <div class="item">        
+        <div class="item">
           <%= link_to "Log in", login_path, class: "ui primary button" %>
       <% end %>
       </div>
